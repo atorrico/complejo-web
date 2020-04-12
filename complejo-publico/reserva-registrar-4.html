@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/principal.css">
+		<link rel="stylesheet" href="css/line-awesome.css">
+		<!-- select especial -->
+		<link rel="stylesheet" href="plugins/bootstrap-select-1.13.2/css/bootstrap-select.min.css">
+		<!-- datepicker -->
+		<link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4-5.0.1/css/tempusdominus-bootstrap-4.min.css">
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+		<title>Hello, world!</title>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</head>
+	<body>
+		<main role="main" class="container">
+			<div class="container">
+				<h1 class="mt-4 mb-4">REGISTRAR RESERVA</h1>
+				<nav class="nav nav-pills nav-fill mb-4">
+					<a class="nav-item nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Reserva</a>
+					<a class="nav-item nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">2. Confirmacion</a>
+				</nav>
+				<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+						<div class="card mb-4">
+							<div class="card-header">
+								<div class="row">
+									<div class="col">
+										Reserva de cancha
+									</div>
+									<div class="col text-right">
+										<a class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#modalAgregar" role="button"><em class="fa fa-plus"></em></a>
+									</div>
+								</div>																				
+							</div>
+						
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th scope="col">Cancha</th>
+												<th scope="col">Fecha</th>
+												<th scope="col">Desde</th>
+												<th scope="col">Hasta</th>
+												<th scope="col">
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- Sin datos
+												<tr>
+													<td colspan="5"><div class="text-center"> Sin registros </div></th>
+												</tr>											
+												<tr>
+													<td colspan="5"></th>
+												</tr>		
+												-->										
+											<tr>
+												<td scope="row">Cancha paddel 2</td>
+												<td>Sab 16 Feb 2019</td>
+												<td>22:30</td>
+												<td>23:00</td>
+												<td>
+													<a class="btn btn-outline-danger btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-trash"></em></a>
+												</td>												
+											</tr>
+											<tr>
+												<td scope="row">Cancha paddel 1</td>
+												<td>Sab 16 Feb 2019</td>
+												<td>23:00</td>
+												<td>00:00</td>
+												<td>
+													<a class="btn btn-outline-danger btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-trash"></em></a>
+												</td>												
+											</tr>
+											<tr>
+												<td scope="row">Cancha paddel 1</td>
+												<td>Dom 17 Feb 2019</td>
+												<td>00:00</td>
+												<td>00:30</td>
+												<td>
+													<a class="btn btn-outline-danger btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-trash"></em></a>
+												</td>												
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4 row">
+							<div class="col text-right">
+								<button class="btn btn-danger">Cancelar</button>
+								<button class="btn btn-primary">Siguiente</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+						<div class="card mb-4">
+							<div class="card-header">
+								Reserva de cancha
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th scope="col">Cancha</th>
+												<th scope="col">Fecha</th>
+												<th scope="col">Hora desde</th>
+												<th scope="col">Hora hasta</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td scope="row">Cancha paddel 2</td>
+												<td>Sab 16 Feb 2019</td>
+												<td>22:30</td>
+												<td>23:00</td>
+											</tr>
+											<tr>
+												<td scope="row">Cancha paddel 1</td>
+												<td>Sab 16 Feb 2019</td>
+												<td>23:00</td>
+												<td>00:00</td>
+											</tr>
+											<tr>
+												<td scope="row">Cancha paddel 1</td>
+												<td>Dom 17 Feb 2019</td>
+												<td>00:00</td>
+												<td>00:30</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<div class="card mb-4">
+									<div class="card-header">
+										Item factura
+									</div>
+									<div class="card-body">
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">Descripcion</th>
+														<th scope="col">Cant</th>
+														<th scope="col">P/U</th>
+														<th scope="col">Importe</th>
+													</tr>
+												</thead>
+												<tfoot>
+												</tfoot>
+												<tbody>
+													<tr>
+														<td>Lorem ipsum dolor</td>
+														<td>1</td>
+														<td>350</td>
+														<td>350</td>
+													</tr>
+													<tr>
+														<td>consectetur adipiscing elit</td>
+														<td>0.5</td>
+														<td>400</td>
+														<td>200</td>
+													</tr>
+													<tr>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+														<td>@mdo</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Resumen factura
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Total
+											<span>$450.00</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Total abonado
+											<span>$150.00</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Total a abonar
+											<span class="badge badge-primary badge-pill">$300.00</span>
+										</li>
+										<!--
+											<li class="list-group-item"><a href="#">Ver detalle factura</a></li>
+											<li class="list-group-item"><a href="#">Ver pagos</a></li>
+											-->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row mb-4">
+							<div class="col text-right">
+								<button class="btn btn-danger">Anterior</button>
+								<button class="btn btn-primary">Finalizar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
+					<div class="mt-4 row">
+						<div class="col-md-3 mb-4">
+							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Reserva</a>
+								<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">2. Confirmacion</a>
+							</div>
+						</div>
+						<div class="col-md-9">
+					
+						</div>
+					</div>
+					-->
+				<!-- Modal -->
+				<div class="modal fade" id="modalAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">							
+							
+								<form>
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label for="inputCancha">Cancha</label>
+											<select id="inputCancha" class="form-control">
+												<option selected>Seleccione</option>
+												<option>Cancha 1</option>
+											</select>
+											<div class="invalid-feedback">
+												Please provide a valid email.
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-3">
+											<label for="input8">Fecha</label>
+											<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+												<input type="text" class="form-control datetimepicker-input is-invalid" data-target="#datetimepicker1" id="input8"/>
+												<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+													<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+												</div>
+												<div class="invalid-feedback">
+													Please provide a valid date.
+												</div>
+											</div>
+										</div>
+										<div class="form-group col-md-3">
+											<label>Hora desde</label>
+											<div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+												<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" id="input9">
+												<div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+													<div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group col-md-3">
+											<label>Hora hasta</label>
+											<div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+												<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" id="input10">
+												<div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+													<div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-primary">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="modalRemover" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Confirmacion de accion</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								¿Esta seguro?
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-primary">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<!-- -->
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- select especial -->
+		<script src="plugins/bootstrap-select-1.13.2/js/bootstrap-select.min.js"></script>
+		<!-- datepicker -->
+		<script src="plugins/tempusdominus-bootstrap-4-5.0.1/js/moment.min.js"></script>	
+		<script src="plugins/tempusdominus-bootstrap-4-5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>		
+		<script>
+			$(function() {
+				$('.selectpicker').selectpicker();						
+				$('#datetimepicker1').datetimepicker({
+					format: 'L'
+				});
+				$('#datetimepicker2').datetimepicker({
+					stepping: 30,
+					format: 'LT'
+				});	
+				$('#datetimepicker3').datetimepicker({
+					stepping: 30,
+					format: 'LT'
+				});					
+			});
+		</script>
+	</body>
+</html>

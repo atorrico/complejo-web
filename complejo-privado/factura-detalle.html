@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/principal.css">
+		<title>Hello, world!</title>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</head>
+	<body>
+
+		<div class="container">
+			<h1 class="mt-4">DETALLE DE FACTURA #45122 </h1>
+			<div class="row mb-4">
+				<div class="col-md-8">
+					<h4>
+						<span class="badge badge-success">ACTIVO</span>
+					</h4>
+				</div>
+				<div class="col-md-4 d-flex justify-content-end">
+					<div class="btn-group">
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Acciones
+						</button>
+						<div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 39px, 0px);">
+							<a class="dropdown-item" href="#">Anular</a>
+							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalPagar">Pagar</a>						
+							<a class="dropdown-item" href="#">Ver pagos</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="card-header">
+							FACTURA
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Tipo factura
+								<span><strong>X</strong></span>
+							</li>						
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Fecha emision
+								<span>22/02/19 <small class="text-muted">18:41:54</small></span>
+							</li>							
+						</ul>
+					</div>				
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="card-header">
+							Cliente
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Amilcar Torrico</h5>
+							<h6 class="card-subtitle mb-2 text-muted">DNI 34808557</h6>														
+							<span class="d-block">1568939465</span>
+							<span class="d-block">amilca.torrico@gmail.com</span>    
+							<span class="d-block">Arenales 1402 Piso 10 Dto B, Buenos Aires, Almirante Brown, Burzaco</span>
+						</div>
+					</div>				
+				</div>				
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="card-header">
+							Emisor
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Leblom club S.A.</h5>
+							<h6 class="card-subtitle mb-2 text-muted">CUIT 34808557</h6>							
+							<span class="d-block">1568939465</span>
+							<span class="d-block">www.clubsocial.com.ar</span>    
+							<span class="d-block">Av Hipolito Yrigoyen 10425, Buenos Aires, Lomas de Zamora, Turdera</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="card mb-4">
+						<div class="card-header">
+							Item factura
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Descripcion</th>
+											<th scope="col">Cant</th>
+											<th scope="col">P/U</th>
+											<th scope="col">Importe</th>
+										</tr>
+									</thead>
+									<tfoot>
+									</tfoot>
+									<tbody>
+										<tr>
+											<td>Lorem ipsum dolor</td>
+											<td>1</td>
+											<td>350</td>
+											<td>350</td>
+										</tr>
+										<tr>
+											<td>consectetur adipiscing elit</td>
+											<td>0.5</td>
+											<td>400</td>
+											<td>200</td>
+										</tr>
+										<tr>
+											<td>Larry</td>
+											<td>the Bird</td>
+											<td>@twitter</td>
+											<td>@mdo</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<div class="card-header">
+							Resumen factura
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Total
+								<span>$450.00</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Total abonado
+								<span>$150.00</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Total a abonar
+								<span class="badge badge-primary badge-pill">$300.00</span>
+							</li>
+							<!--
+								<li class="list-group-item"><a href="#">Ver detalle factura</a></li>
+								<li class="list-group-item"><a href="#">Ver pagos</a></li>
+								-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div id="accordion">
+				<div class="card mb-4">
+					<div class="card-header" id="headingOne">
+						<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Historial</a>
+						<!--
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Historial
+							</button>											
+							-->
+					</div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+
+						<div class="card-body">
+							<div class="row">
+
+								<div class="col-auto text-center flex-column d-none d-sm-flex">
+									<div class="row h-50">
+										<div class="col">&nbsp;</div>
+										<div class="col">&nbsp;</div>
+									</div>
+									<h5 class="m-2">
+										<span class="badge badge-pill bg-light border">&nbsp;</span>
+									</h5>
+									<div class="row h-50">
+										<div class="col border-right">&nbsp;</div>
+										<div class="col">&nbsp;</div>
+									</div>
+								</div>
+
+								<div class="col py-2">
+									<div class="card">
+										<div class="card-body">
+											<div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
+											<h5 class="card-title">Anulacion de reserva, <small class="text-muted">administrador </small></h5>
+											<p>Motivo: TORMENTA. Anulacion por tormenta espontanea</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-auto text-center flex-column d-none d-sm-flex">
+									<div class="row h-50">
+										<div class="col border-right">&nbsp;</div>
+										<div class="col">&nbsp;</div>
+									</div>
+									<h5 class="m-2">
+										<span class="badge badge-pill bg-light border">&nbsp;</span>
+									</h5>
+									<div class="row h-50">
+										<div class="col border-right">&nbsp;</div>
+										<div class="col">&nbsp;</div>
+									</div>
+								</div>
+								<div class="col py-2">
+									<div class="card">
+										<div class="card-body">
+											<div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
+											<h5 class="card-title">Modificacion de reserva, <small class="text-muted">administrador </small></h5>
+											<p>Motivo: Complicacion con el horario</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-auto text-center flex-column d-none d-sm-flex">
+									<div class="row h-50">
+										<div class="col border-right">&nbsp;</div>
+										<div class="col">&nbsp;</div>
+									</div>
+									<h5 class="m-2">
+										<span class="badge badge-pill bg-light border">&nbsp;</span>
+									</h5>
+									<div class="row h-50">
+										<div class="col">&nbsp;</div>
+										<div class="col">&nbsp;</div>
+									</div>
+								</div>
+								<div class="col py-2">
+									<div class="card">
+										<div class="card-body">
+											<div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
+											<h5 class="card-title">Creacion de reserva, <small class="text-muted">administrador </small></h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>					
+
+					</div>
+				</div>
+			</div>			
+			<!-- Modal -->
+			<div class="modal fade" id="modalPagar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label>Monto a pagar</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-group">
+									<label>Comentario</label>
+									<textarea class="form-control" rows="3"></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+							<button type="button" class="btn btn-primary">Aceptar</button>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>		
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

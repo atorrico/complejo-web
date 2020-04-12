@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/principal.css">
+		<link rel="stylesheet" href="css/line-awesome.css">
+		<!-- select especial -->
+		<link rel="stylesheet" href="plugins/bootstrap-select-1.13.2/css/bootstrap-select.min.css">
+		<!-- datepicker -->
+		<link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4-5.0.1/css/tempusdominus-bootstrap-4.min.css">
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+		<title>Hello, world!</title>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</head>
+	<body>
+		<main role="main" class="container">
+			<div class="container">
+				<h1 class="mt-4 mb-4">REGISTRAR FACTURA</h1>
+				<nav class="nav nav-pills nav-fill mb-4">
+					<a class="nav-item nav-link active" id="v-pills-user-tab" data-toggle="pill" href="#v-pills-user" role="tab" aria-controls="v-pills-user" aria-selected="true">1. Contacto</a>
+					<a class="nav-item nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">2. Factura</a>
+					<a class="nav-item nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">3. Confirmacion</a>
+				</nav>
+				<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="v-pills-user" role="tabpanel" aria-labelledby="v-pills-user-tab">
+						<div class="card mb-4">
+							<div class="card-header">
+								Contacto de la persona
+							</div>
+							<div class="card-body">
+								<form>
+									<div class="form-row">
+										<div class="form-group col-md-3">
+											<label>Contacto agendado</label>
+											<select id="inputState" class="form-control">
+												<option selected="">Seleccione</option>
+												<option>SI</option>
+												<option>NO</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-3">
+											<label>Nombre</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group col-md-3">
+											<label>Telefono</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-3">
+											<label>Tipo Documento</label>
+											<select id="inputState" class="form-control">
+												<option selected="">Seleccione</option>
+												<option>DNI</option>
+												<option>CUIT</option>
+											</select>
+										</div>
+										<div class="form-group col-md-3">
+											<label>Numero Documento</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group col-md-3">
+											<label class="d-none d-sm-none d-md-block">&nbsp;</label>
+											<div>
+												<button type="submit" class="btn btn-primary">Buscar</button>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-3">
+											<label>Nombre y apellido</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group col-md-3">
+											<label>Telefono</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group col-md-3">
+											<label>Correo</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="mb-4 row">
+							<div class="col text-right">
+								<button class="btn btn-danger">Cancelar</button>
+								<button class="btn btn-primary">Siguiente</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+						<div class="card mb-4">
+							<div class="card-header">
+								<div class="row">
+									<div class="col">
+										Item factura
+									</div>
+									<div class="col text-right">
+										<a class="btn btn-success btn-sm" href="#" data-toggle="modal" data-target="#modalAgregar" role="button"><em class="fa fa-plus"></em></a>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">Nombre</th>
+												<th scope="col">Cantidad</th>
+												<th scope="col">P/U</th>
+												<th scope="col">Importe</th>
+												<th scope="col">
+												</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<th></th>
+												<th></th>
+												<th></th>												
+												<th>Total</th>
+												<th>$550,00</th>
+												<th></th>
+											</tr>
+										</tfoot>										
+										<tbody>
+											<!-- Sin datos
+												<tr>
+													<td colspan="5"><div class="text-center"> Sin registros </div></th>
+												</tr>											
+												<tr>
+													<td colspan="5"></th>
+												</tr>		
+												-->										
+											<tr>
+												<td scope="row">8001</td>
+												<td>Cancha paddel 2</td>
+												<td><input type="text" class="form-control" size="1"></td>
+												<td>$350.00</td>
+												<td>$700.00</td>
+												<td>
+													<a class="btn btn-outline-danger btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-trash"></em></a>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">8002</td>
+												<td>Coca Cola 2.15</td>
+												<td><input type="text" class="form-control is-invalid" size="1"></td>
+												<td>$80.00</td>
+												<td>$0.00</td>
+												<td>
+													<a class="btn btn-outline-danger btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-trash"></em></a>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">8003</td>
+												<td>Alquiler paleta</td>
+												<td><input type="text" class="form-control" size="1"></td>
+												<td>$20.00</td>
+												<td>$40.00</td>
+												<td>
+													<a class="btn btn-outline-danger btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-trash"></em></a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4 row">
+							<div class="col text-right">
+								<button class="btn btn-danger">Cancelar</button>
+								<button class="btn btn-primary">Siguiente</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										FACTURA
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Tipo factura
+											<span><strong>X</strong></span>
+										</li>						
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Fecha emision
+											<span>22/02/19 <small class="text-muted">18:41:54</small></span>
+										</li>							
+									</ul>
+								</div>				
+							</div>
+							<div class="col-md-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Cliente
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Amilcar Torrico</h5>
+										<h6 class="card-subtitle mb-2 text-muted">DNI 34808557</h6>														
+										<span class="d-block">1568939465</span>
+										<span class="d-block">amilcar.torrico@gmail.com</span>										
+									</div>
+								</div>				
+							</div>				
+							<div class="col-md-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Emisor
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Leblom club S.A.</h5>
+										<h6 class="card-subtitle mb-2 text-muted">CUIT 34808557</h6>							
+										<span class="d-block">1568939465</span>
+										<span class="d-block">www.clubsocial.com.ar</span>    
+										<span class="d-block">Av Hipolito Yrigoyen 10425, Buenos Aires, Lomas de Zamora, Turdera</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-8">
+								<div class="card mb-4">
+									<div class="card-header">
+										Item factura
+									</div>
+									<div class="card-body">
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">Descripcion</th>
+														<th scope="col">Cant</th>
+														<th scope="col">P/U</th>
+														<th scope="col">Importe</th>
+													</tr>
+												</thead>
+												<tfoot>
+												</tfoot>
+												<tbody>
+													<tr>
+														<td>Cancha paddel 2</td>
+														<td>2</td>
+														<td>$350.00</td>
+														<td>$700.00</td>
+													</tr>
+													<tr>
+														<td>Coca Cola 2.15</td>
+														<td>200</td>
+														<td>$80.00</td>
+														<td>$240.00</td>
+													</tr>
+													<tr>
+														<td>Alquiler paleta</td>
+														<td>2</td>
+														<td>$40.00</td>
+														<td>$80.00</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card mb-4">
+									<div class="card-header">
+										Resumen factura
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Total
+											<span>$450.00</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Total abonado
+											<span>$150.00</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Total a abonar
+											<span class="badge badge-primary badge-pill">$300.00</span>
+										</li>
+										<!--
+											<li class="list-group-item"><a href="#">Ver detalle factura</a></li>
+											<li class="list-group-item"><a href="#">Ver pagos</a></li>
+											-->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row mb-4">
+							<div class="col text-right">
+								<button class="btn btn-danger">Anterior</button>
+								<button class="btn btn-primary">Finalizar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
+					<div class="mt-4 row">
+						<div class="col-md-3 mb-4">
+							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Reserva</a>
+								<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">2. Confirmacion</a>
+							</div>
+						</div>
+						<div class="col-md-9">
+					
+						</div>
+					</div>
+					-->
+				<!-- Modal -->
+				<div class="modal fade" id="modalAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label>Codigo o nombre producto</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group col-md-3">
+											<label class="d-none d-sm-none d-md-block">&nbsp;</label>
+											<div>
+												<button type="submit" class="btn btn-primary">Buscar</button>
+											</div>
+										</div>
+									</div>
+								</form>
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">Nombre</th>
+												<th scope="col">Precio</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tfoot>
+										</tfoot>
+										<tbody>
+											<tr>
+												<td>1002</td>
+												<td>Cancha paddel 2</td>
+												<td>$350.00</td>
+												<td>
+													<a class="btn btn-outline-success btn-sm" href="#" data-toggle="modal" data-target="#modalAgregarProducto" role="button">
+													<em class="fa fa-plus"></em>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>2001</td>
+												<td>Coca Cola 2.15</td>
+												<td>$80.00</td>
+												<td>
+													<a class="btn btn-outline-success btn-sm" href="#" data-toggle="modal" data-target="#modalAgregarProducto" role="button">
+													<em class="fa fa-plus"></em>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>2002</td>
+												<td>Alquiler paleta</td>
+												<td>$40.00</td>
+												<td>
+													<a class="btn btn-outline-success btn-sm" href="#" data-toggle="modal" data-target="#modalAgregarProducto" role="button">
+													<em class="fa fa-plus"></em>
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<nav aria-label="Page navigation example">
+									<ul class="pagination justify-content-end">
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+											</a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item active"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Next">
+											<span aria-hidden="true">&raquo;</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-primary">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="modalRemover" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Confirmacion de accion</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								¿Esta seguro?
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-primary">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<!-- -->
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- select especial -->
+		<script src="plugins/bootstrap-select-1.13.2/js/bootstrap-select.min.js"></script>
+		<!-- datepicker -->
+		<script src="plugins/tempusdominus-bootstrap-4-5.0.1/js/moment.min.js"></script>	
+		<script src="plugins/tempusdominus-bootstrap-4-5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>		
+		<script>
+			$(function() {
+				$('.selectpicker').selectpicker();						
+				$('#datetimepicker1').datetimepicker({
+					format: 'L'
+				});
+				$('#datetimepicker2').datetimepicker({
+					stepping: 30,
+					format: 'LT'
+				});	
+				$('#datetimepicker3').datetimepicker({
+					stepping: 30,
+					format: 'LT'
+				});					
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+En el COMPLEJO,
+Si la persona quiere sumar puntos tiene que estar registrado presentado DNI y registrando,
+Nro documento
+Nombre y apellido
+Correo electronico
+Telefono
+Estos datos se puede guardar en una tabla de personas, los cuales el operador del sistema certifica que los datos de las persona es correcta.
+
+*El correo electronico se relacionará con el usuario de la parte publica
+
+Parte publica
+Al crear un usuario nuevo se debe registrar 
+Nro documento
+Nombre y apellido
+Correo electronico
+Telefono
+Estos datos se registran en la tabla de usuario ya que en ningun momento se puede validar que los datos sean correctos
+
+
+Para que el usuario de la parte publica pueda ver las reservas echas en el complejo, debe coincidir el correo electronico.
+Si el usuario reclama de que no vee estas reservas, debe presentarse en el complejo con su dni para que el operador valide que los datos nro doc,
+nombre y apellido coincida con los datos del usuario del complejo y tambien coincida con los datos registrados por el operador en el complejo. Si coinden 
+entonces el operador puede modificar el correo de la tabla persona.
+Se debe controlar las cantidad de reserva que puede hacer un usuario creado desde la parte publica, teniendo en cuenta su correo ya que este es el dato fuerte.
+
+El usuario de la parte publica puede modificar su dni, nombre y apellido las veces que quiera ya que este si quiere hacer un reclamo tiene que presentarse con su dni
+
+
+
+
+
+
+
+
+
+COMPLEJO PRIVADO
+
+Reserva
+	Registrar (reserva-registrar-3.html)
+		DEBE PERMITIR
+			Registrar una cancha de 23.30 a 00.30, (este caso podria podria resolverse reservando de 23.30 a 00 para un dia y de 00 a 00.30 para otro dia, en 2 items)
+			Registrar una cancha de 18:30 a 19:00 y otra cancha de 19:00 a 19:30
+		
+
+		NO DEBERIA PERMITR
+			No permitir registrar una cancha de 17:30 a 18:30 y otra de 18:00 a 18:30, se sobreponen
+		
+		*Se debe verificar que los items de las reservas sean horarios de corridos, es decir que no haya un espacio de hora muerta, por ej no permitir reserva cancha de paddel1 de 18.30 a 19.30 y de 20.00 a 21.00, entre 19.30 y 20.00 hay un espacio muerto.
+		*En la pantalla de confirmacion solo debe aparecer el monto total de la factura. En caso de que la reserva sea interna (por ej reservar canchas para clases de futbol) o evento propio del club, no debe visualizarse las secciones de items y resumen de factura. En el caso que cuente con factura, en la pantalla de confirmacion no se visualizará los pagos realizados (en caso de una modificacion).
+		
+	Modificar
+	Anular
+	Listar
+		
+		DEBE PERMITIR
+			Buscar por nro de reserva, fecha, 
+		
+		*Esta pagina se encarga de ver las reservas realizadas en sus diferentes estados. Para saber si hay disponibilidad para una reserva se deberia buscar atraves de otra pagina en el que indique disponibilidad por tipo de cancha y fecha
+		*Se deberia buscar por nombre de la persona que solicito la reserva?
+		
+	Ver detalle	(reserva-detalle.html)
+		*Desde aqui se debe poder asociar o crear un pago
+		
+	Anular factura
+		Anular la factura relacionada sin anular la reserva (se debe registrar la accion sobre la reserva - ANULACION FACTURA)
+		
+	Agregar factura
+		Agregar factura a una reserva sin factura
+
+Producto
+	Registrar
+	Modificar
+	Listar
+	Ver detalle
+
+Factura
+	Registrar
+	Modificar
+	Anular
+	Listar
+		Registrar pago para una factura seleccionada ingresando el importe que se deseé
+		Seleccionar varias facturas con el mismo cliente y pagar el importe total de todas las facturas
+
+	Ver detalle
+	Cambiar tipo factura (A,B,C,X, etc)
+		Cambiar el tipo de facturacion de X a A,B o C, al hacerlo se debe verificar que la factura tenga datos como DNI o domicilio. Si no lo tiene se debe modificar el titular de la factura por un cliente agendado. No debe tener pagos acreditado relacionados.
+
+		Pasar factura X a C
+
+Pago
+	Registrar
+	Anular
+	Listar
+	Ver detalle
+
+Cliente
+	Registrar
+	Modificar
+		Modificar cliente, se debe crear un registro nuevo en la tabla 
+	Listar
+	Ver detalle
+
+
+**********cancha-listar-3, probar en separar filtro en cuadrados diferentes, caracteristicas y por disponibilidad (con opcion de cancha combinada). Al buscar por disponibilidad se visualizaran las opciones algo similar a turismo city
+
+
+DISEÑO
+En las tablas, el codigo de la entidad de la primera columna no es link porque podria tener el checbox, en pantallas chicas es mas probable que al seleccionar el checkbox vaya al ver detalle sin querer. Por tal motivo se deja en la ultima columna el ver detalle

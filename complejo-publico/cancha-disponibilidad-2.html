@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/principal.css">
+		<!-- datepicker -->
+		<link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4-5.0.1/css/tempusdominus-bootstrap-4.min.css">		
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+		<title>Hello, world!</title>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="mt-4 mb-4">VER DISPONIBILIDAD</h1>
+<p>-BORRAR COMENTARIO AL APLICAR SOLUCION - Esta pag muestra disponibilidad horaria para una sola cancha. Se deberia poder que a traves de un filtro que sea por dia y hora se deberia mostrar las canchas disponibles. Si esta todo ocupado deberia de mostrar alguna sugerencia, como por ej disponibilidad en la sig hora. La solucion podria ser similar a esta pag en donde indique si hay mas de 1 dispobilidad por fila col, pero se deberia tener cuidado si esa disponibilidad es media hora de una cancha y media de otra</p>
+			<div class="card mb-4">
+				<div class="card-header">
+					Filtrar por
+				</div>
+				<div class="card-body">
+
+					<form>
+						<div class="form-row">
+						
+							<div class="form-group col-md-3">
+								<label>Fecha</label>
+								<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+									<input type="text" class="form-control datetimepicker-input is-invalid" data-target="#datetimepicker1" id="input8" />
+									<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+										<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+									</div>
+									<div class="invalid-feedback">
+										Please provide a valid date.
+									</div>
+								</div>
+							</div>							
+							<div class="form-group col-md-3">
+								<label>Cancha</label>
+								<select id="inputState" class="form-control">
+									<option selected>Seleccione</option>
+									<option>...</option>
+								</select>
+							</div>
+							<div class="form-group col-md-3">
+								<label class="d-none d-sm-none d-md-block">&nbsp;</label>
+								<div>
+									<button type="submit" class="btn btn-primary">Aplicar</button>
+								</div>
+							</div>							
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			<div class="card mb-4">
+				<div class="card-header">
+					Listado de disponibilidad
+				</div>
+				<div class="card-body">
+						
+					<div class="table-responsive">
+						
+						<table class="table table-sm">
+						   <thead>
+							  <tr>
+								 <th scope="col"></th>
+								 <th scope="col">Lun <small>15/03/12</small></th>
+								 <th scope="col">Mar <small>16/03/12</small></th>
+								 <th scope="col">Mie <small>17/03/12</small></th>
+								 <th scope="col">Jue <small>18/03/12</small></th>
+								 <th scope="col">Vie <small>19/03/12</small></th>
+								 <th scope="col">Sab <small>20/03/12</small></th>
+								 <th scope="col">Dom <small>21/03/12</small></th>
+							  </tr>
+						   </thead>
+						   <tbody>
+							  <tr>
+								 <th scope="row">00:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">00:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>	
+							  <tr>
+								 <th scope="row">01:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">01:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>	
+							  <tr>
+								 <th scope="row">02:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">02:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>	
+							  <tr>
+								 <th scope="row">07:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">07:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>								  
+							  <tr>
+								 <th scope="row">08:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">08:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>								  
+							  <tr>
+								 <th scope="row">09:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">09:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>							   
+							  <tr>
+								 <th scope="row">10:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">10:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>						   
+							  <tr>
+								 <th scope="row">11:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>					   
+							  <tr>
+								 <th scope="row">11:30</th>
+								 <td class="table-secondary"></td>
+								 <td class="table-secondary"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">12:00</th>
+								 <td class="table-secondary"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">12:30</th>
+								 <td class="table-success"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">13:00</th>
+								 <td class="table-danger"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">13:30</th>
+								 <td class="table-danger"></td>
+								 <td class="table-success"></td>
+								 <td class="table-success"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">14:00</th>
+								 <td class="table-success"></td>
+								 <td class="table-success"></td>
+								 <td class="table-success"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">14:30</th>
+								 <td class="table-success"></td>
+								 <td class="table-success"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">15:00</th>
+								 <td class="table-danger"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">15:30</th>
+								 <td class="table-danger"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">16:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">16:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">17:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">17:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>	 
+							  <tr>
+								 <th scope="row">18:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">18:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">19:00</th>
+								 <td class="table-danger"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">19:30</th>
+								 <td class="table-danger"></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">20:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">20:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">21:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">21:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>	  
+							  <tr>
+								 <th scope="row">22:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">22:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>	  
+							  <tr>
+								 <th scope="row">23:00</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>
+							  <tr>
+								 <th scope="row">23:30</th>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+								 <td></td>
+							  </tr>	   	  
+						   </tbody>
+						</table>						
+					</div>
+				</div>
+			</div>			
+			
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>		
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- datepicker -->
+		<script src="plugins/tempusdominus-bootstrap-4-5.0.1/js/moment.min.js"></script>	
+		<script src="plugins/tempusdominus-bootstrap-4-5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>		
+		<script>
+			$(function() {						
+				$('#datetimepicker1').datetimepicker({
+			                 format: 'L'
+			             });
+			});
+		</script>		
+	</body>
+</html>

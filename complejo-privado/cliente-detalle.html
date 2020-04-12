@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/principal.css">
+		<title>Hello, world!</title>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</head>
+	<body>
+
+		<div class="container">
+			<h1 class="mt-4">DETALLE DE CLIENTE #45122 </h1>
+			<div class="row mb-4">
+				<div class="col-md-8">
+					<h4>
+						<span class="badge badge-success">ACTIVO</span>
+					</h4>
+				</div>
+				<div class="col-md-4 d-flex justify-content-end">
+					<div class="btn-group">
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Acciones
+						</button>
+						<div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 39px, 0px);">
+							<a class="dropdown-item" href="#">Modificar datos principales</a>
+							<a class="dropdown-item" href="#">Modificar datos de contacto</a>
+							<a class="dropdown-item" href="#">Cambiar a inactivo</a>
+							<a class="dropdown-item" href="#">Cambiar a activo</a>
+							<a class="dropdown-item" href="#">Reiniciar reputacion</a>
+							<a class="dropdown-item" href="#">Eliminar</a> <!-- Solo se elimina si no tiene ninguna accion asociada -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card mb-4">
+						<div class="card-header">
+							Cliente
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Amilcar Torrico</h5>
+							<h6 class="card-subtitle mb-2 text-muted">DNI 34808557</h6>
+							<span class="d-block">1568939465</span>
+							<span class="d-block">amilcar.torrico@gmail.com</span>    
+							<span class="d-block">Arenales 1402 Piso 10 Dto B, Buenos Aires, Almirante Brown, Burzaco</span>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Reputacion
+								<span class="badge badge-success badge-pill">Buena</span>
+							</li>
+						</ul>						
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div id="accordion">
+						<div class="card mb-4">
+							<div class="card-header" id="headingOne">
+								<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Historial</a>
+								<!--
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										Historial
+									</button>											
+									-->
+							</div>
+							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-auto text-center flex-column d-none d-sm-flex">
+											<div class="row h-50">
+												<div class="col">&nbsp;</div>
+												<div class="col">&nbsp;</div>
+											</div>
+											<h5 class="m-2">
+												<span class="badge badge-pill bg-light border">&nbsp;</span>
+											</h5>
+											<div class="row h-50">
+												<div class="col border-right">&nbsp;</div>
+												<div class="col">&nbsp;</div>
+											</div>
+										</div>
+										<div class="col py-2">
+											<div class="card">
+												<div class="card-body">
+													<div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
+													<h5 class="card-title">Cliente creado, <small class="text-muted">administrador </small></h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-auto text-center flex-column d-none d-sm-flex">
+											<div class="row h-50">
+												<div class="col border-right">&nbsp;</div>
+												<div class="col">&nbsp;</div>
+											</div>
+											<h5 class="m-2">
+												<span class="badge badge-pill bg-light border">&nbsp;</span>
+											</h5>
+											<div class="row h-50">
+												<div class="col border-right">&nbsp;</div>
+												<div class="col">&nbsp;</div>
+											</div>
+										</div>
+										<div class="col py-2">
+											<div class="card">
+												<div class="card-body">
+													<div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
+													<h5 class="card-title">Contacto modificado, <small class="text-muted">administrador </small></h5>
+													<p>Motivo: Complicacion con el horario</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-auto text-center flex-column d-none d-sm-flex">
+											<div class="row h-50">
+												<div class="col border-right">&nbsp;</div>
+												<div class="col">&nbsp;</div>
+											</div>
+											<h5 class="m-2">
+												<span class="badge badge-pill bg-light border">&nbsp;</span>
+											</h5>
+											<div class="row h-50">
+												<div class="col">&nbsp;</div>
+												<div class="col">&nbsp;</div>
+											</div>
+										</div>
+										<div class="col py-2">
+											<div class="card">
+												<div class="card-body">
+													<div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
+													<h5 class="card-title">Cambiado a estado inactivo, Modificacion a estado inactivo, <small class="text-muted">administrador </small></h5>													
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-auto text-center flex-column d-none d-sm-flex">
+											<div class="row h-50">
+												<div class="col border-right">&nbsp;</div>
+												<div class="col">&nbsp;</div>
+											</div>
+											<h5 class="m-2">
+												<span class="badge badge-pill bg-light border">&nbsp;</span>
+											</h5>
+											<div class="row h-50">
+												<div class="col border-right">&nbsp;</div>
+												<div class="col">&nbsp;</div>
+											</div>
+										</div>
+										<div class="col py-2">
+											<div class="card">
+												<div class="card-body">
+													<div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
+													<h5 class="card-title">Reputacion reestablecido, <small class="text-muted">administrador </small></h5>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>		
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

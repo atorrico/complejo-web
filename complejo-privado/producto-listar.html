@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/principal.css">
+		<link rel="stylesheet" href="css/line-awesome.css">
+		<!-- select especial -->
+		<link rel="stylesheet" href="plugins/bootstrap-select-1.13.2/css/bootstrap-select.min.css">
+		<!-- datepicker -->
+		<link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4-5.0.1/css/tempusdominus-bootstrap-4.min.css">
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+		<title>Hello, world!</title>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</head>
+	<body>
+
+		<div class="container">
+			<h1 class="mt-4 mb-4">LISTAR PRODUCTOS</h1>
+			<div class="card mb-4">
+				<div class="card-header">
+					Filtrar por
+				</div>
+				<div class="card-body">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-3">
+								<label>Nro de producto</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="form-group col-md-3">
+								<label>Nombre</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="form-group col-md-3">
+								<label for="input8">Creacion</label>
+								<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+									<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" id="input8"/>
+									<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+										<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+									</div>
+								</div>
+							</div>							
+							<div class="form-group col-md-3">
+								<label>Estado</label>
+								<select id="inputState" class="form-control">
+									<option selected="">Todos</option>
+									<option>...</option>
+								</select>
+							</div>							
+							<div class="form-group col-md-3">
+								<!--
+								<label class="d-none d-sm-none d-md-block">&nbsp;</label>
+								-->
+								<div>
+									<button type="submit" class="btn btn-primary">Aplicar</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="card mb-4">
+				<div class="card-header">
+					<div class="row">
+						<div class="col">Listado de productos</div>
+						<div class="col text-right">
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Acciones
+								</button>
+								<div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 31px, 0px);">
+									<a class="dropdown-item" href="#">Nuevo</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="table-responsive mb-4">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Precio</th>
+									<th scope="col">Creacion</th>
+									<th scope="col">Estado</th>
+									<th scope="col">
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										5001									
+									</td>
+									<td>Coca cola 1.5</td>
+									<td>$80.00</td>
+									<td><span>02/02/19 <small class="text-muted">17:01:00</small></span></td>
+									<td><span class="badge badge-success">Activo</span></td>
+									<td>
+										<a class="btn btn-outline-primary btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-eye"></em></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										5002
+									</td>
+									<td>Levite 2.15 Pomelo</td>
+									<td>$55.00</td>
+									<td><span>22/02/19 <small class="text-muted">18:41:54</small></span></td>
+									<td><span class="badge badge-warning">lorem ipsum</span></td>
+									<td>
+										<a class="btn btn-outline-primary btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-eye"></em></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										5004									
+									</td>
+									<td>Cancha Futbol 5, L-V Diurna</td>
+									<td>$350.00</td>
+									<td><span>22/02/19 <small class="text-muted">20:40:32</small></span></td>
+									<td><span class="badge badge-danger">dolor</span></td>
+									<td>
+										<a class="btn btn-outline-primary btn-sm" href="#" data-toggle="modal" data-target="#modalRemover" role="button"><em class="fa fa-eye"></em></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-end">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item active"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<!-- -->
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- select especial -->
+		<script src="plugins/bootstrap-select-1.13.2/js/bootstrap-select.min.js"></script>
+		<!-- datepicker -->
+		<script src="plugins/tempusdominus-bootstrap-4-5.0.1/js/moment.min.js"></script>	
+		<script src="plugins/tempusdominus-bootstrap-4-5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>		
+		<script>
+			$(function() {
+				$('.selectpicker').selectpicker();						
+				$('#datetimepicker1').datetimepicker({
+			                 format: 'L'
+			             });
+			});
+		</script>
+	</body>
+</html>
+
+<!-- 
+Mas info sobre hidden-xs o para desaparecer en pantallas chicas
+https://getbootstrap.com/docs/4.0/utilities/display/ -->
