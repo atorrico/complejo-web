@@ -1,0 +1,4 @@
+Se agrega algunas lineas
+Para el desarrollo
+o implementacion de git
+Archivo temporal
