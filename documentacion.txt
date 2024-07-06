@@ -6,7 +6,7 @@ Correo electronico
 Telefono
 Estos datos se puede guardar en una tabla de personas, los cuales el operador del sistema certifica que los datos de las persona es correcta.
 
-*El correo electronico se relacionar· con el usuario de la parte publica
+*El correo electronico se relacionar√° con el usuario de la parte publica
 
 Parte publica
 Al crear un usuario nuevo se debe registrar 
@@ -46,7 +46,7 @@ Reserva
 			No permitir registrar una cancha de 17:30 a 18:30 y otra de 18:00 a 18:30, se sobreponen
 		
 		*Se debe verificar que los items de las reservas sean horarios de corridos, es decir que no haya un espacio de hora muerta, por ej no permitir reserva cancha de paddel1 de 18.30 a 19.30 y de 20.00 a 21.00, entre 19.30 y 20.00 hay un espacio muerto.
-		*En la pantalla de confirmacion solo debe aparecer el monto total de la factura. En caso de que la reserva sea interna (por ej reservar canchas para clases de futbol) o evento propio del club, no debe visualizarse las secciones de items y resumen de factura. En el caso que cuente con factura, en la pantalla de confirmacion no se visualizar· los pagos realizados (en caso de una modificacion).
+		*En la pantalla de confirmacion solo debe aparecer el monto total de la factura. En caso de que la reserva sea interna (por ej reservar canchas para clases de futbol) o evento propio del club, no debe visualizarse las secciones de items y resumen de factura. En el caso que cuente con factura, en la pantalla de confirmacion no se visualizar√° los pagos realizados (en caso de una modificacion).
 		
 	Modificar
 	Anular
@@ -78,7 +78,7 @@ Factura
 	Modificar
 	Anular
 	Listar
-		Registrar pago para una factura seleccionada ingresando el importe que se deseÈ
+		Registrar pago para una factura seleccionada ingresando el importe que se dese√©
 		Seleccionar varias facturas con el mismo cliente y pagar el importe total de todas las facturas
 
 	Ver detalle
@@ -104,5 +104,10 @@ Cliente
 **********cancha-listar-3, probar en separar filtro en cuadrados diferentes, caracteristicas y por disponibilidad (con opcion de cancha combinada). Al buscar por disponibilidad se visualizaran las opciones algo similar a turismo city
 
 
-DISE—O
+DISE√ëO
 En las tablas, el codigo de la entidad de la primera columna no es link porque podria tener el checbox, en pantallas chicas es mas probable que al seleccionar el checkbox vaya al ver detalle sin querer. Por tal motivo se deja en la ultima columna el ver detalle
+
+
+
+DUDAS:
+En dise√±o para listado y busqueda, definir si se utilizan 2 div, uno para filtrar y otro para listar. Si se opta por esta opcion, en mobile hay que scrollear 'bastante'
